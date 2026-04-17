@@ -1,0 +1,95 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Style */
+.navbar {
+    display: flex;
+    justify-content: space-between; /* Pushes logo and links to opposite sides */
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #333;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+    height: 80vh; /* 80% of screen height */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    text-align: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.cta-btn {
+    margin-top: 20px;
+    padding: 10px 25px;
+    background-color: #ff4757;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Footer Section */
+.footer {
+    display: flex;
+    flex-direction: column; /* Stack text and icons vertically */
+    align-items: center;
+    padding: 30px;
+    background-color: #333;
+    color: white;
+    gap: 10px;
+}
+
+.socials a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+/* Responsive Design (Mobile) */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column; /* Stacks logo on top of links on small screens */
+        padding: 20px;
+    }
+
+    .nav-links {
+        margin-top: 15px;
+        padding: 0;
+    }
+
+    .nav-links li {
+        margin: 0 10px;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+}
